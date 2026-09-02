@@ -103,6 +103,17 @@ p{margin:0 0 16px; max-width:62ch;}
 .verdict .h{font-family:var(--disp); font-weight:900; font-size:15.5px; color:var(--caution-ink); margin-bottom:8px;}
 .verdict p{margin:0; font-size:15px; color:var(--caution-ink);}
 
+/* 遡及の説明 */
+.sk{display:flex; flex-direction:column; gap:0; margin:8px 0 22px;}
+.sk-row{display:grid; grid-template-columns:150px 1fr; gap:18px; padding:20px 22px; align-items:start;}
+.sk-row.usual{background:var(--side-a);}
+.sk-row.now{background:var(--side-b); border-left:4px solid var(--accent);}
+.sk-label{font-family:var(--disp); font-weight:900; font-size:15px; line-height:1.5; color:var(--sub);}
+.sk-row.now .sk-label{color:var(--accent-deep);}
+.sk-body{font-size:15.5px; line-height:1.8;}
+.sk-body b{font-weight:700;}
+@media(max-width:800px){ .sk-row{grid-template-columns:1fr; gap:6px;} }
+
 .quotes{display:flex; flex-direction:column; gap:22px; margin-top:8px;}
 blockquote{
   margin:0; padding-left:20px; border-left:3px solid var(--accent);
@@ -216,6 +227,27 @@ footer b{color:var(--sub);}
       <p>京都市が8月31日の会議について出している報道発表資料（8月24日付）を確認しましたが、中身は開催案内と委員名簿だけで、素案そのものは入っていませんでした。9月2日時点で、市のサイトに当日の会議資料は掲載されていません。<br>
       つまり「既存は適用外」と「既存にも適用」のどちらが正しいかは、<span class="hl">いま公開されている情報だけでは確定できません</span>。このページでも断定していません。</p>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>この話の核心は「遡及（そきゅう）」</h2>
+    <p class="sec-note">新しいルールが、すでに営業している施設にも当てはまるのかどうか。ここが、他の規制強化のニュースと決定的に違う点です。</p>
+
+    <div class="sk">
+      <div class="sk-row usual">
+        <div class="sk-label">ふつうの<br>規制強化なら</div>
+        <div class="sk-body">新しいルールは<b>これから始める人</b>に適用されます。すでに許可を取って営業している施設には、経過措置や適用除外が置かれるのが一般的です。だから「新規は禁止」と聞いても、既存のホストは自分の話として受け取らずに済みます。</div>
+      </div>
+      <div class="sk-row now">
+        <div class="sk-label">遡及つき<br>だとしたら</div>
+        <div class="sk-body">新しいルールが<span class="hl">すでに営業している施設にも適用</span>されます。適法に許可を取り、近隣と関係を作り、投資を回収している途中の施設が、あとからできたルールによって続けられなくなる、ということです。京都のホストが「全面撤退しろという内容」と書いているのは、この意味です。</div>
+      </div>
+    </div>
+
+    <p>京都市の素案について、当事者は「既存施設にも適用」と説明しています。一方で報道は、営業日数を0日にする柱について「既に営業している民泊は適用外」と書いています。<b>この2つが両立するとしたら、日数の規制は新規だけ・常駐義務は既存にも、という組み合わせになりますが、それを裏づける資料はまだ公開されていません。</b></p>
+    <p>遡及があるかないかで、このニュースは「京都でこれから始める人の話」にも「いま全国で営業している人全員の話」にもなります。9月8日の収録で、まずここを確認します。</p>
   </div>
 </section>
 
