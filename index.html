@@ -113,6 +113,9 @@ p{margin:0 0 16px; max-width:62ch;}
 .sk-body{font-size:15.5px; line-height:1.8;}
 .sk-body b{font-weight:700;}
 @media(max-width:800px){ .sk-row{grid-template-columns:1fr; gap:6px;} }
+.sk-row .art{display:block; font-size:13px; font-weight:700; color:var(--faint); letter-spacing:.06em; margin-top:6px;}
+.lawq{background:var(--paper); border-left:4px solid var(--accent); padding:16px 20px; margin:0 0 12px; font-size:15.5px; line-height:1.85;}
+.lawq b{font-weight:700;}
 
 .quotes{display:flex; flex-direction:column; gap:22px; margin-top:8px;}
 blockquote{
@@ -253,6 +256,31 @@ footer b{color:var(--sub);}
 
 <section>
   <div class="wrap">
+    <h2>条文を読むと、2つの法律で自治体の権限が違う</h2>
+    <p class="sec-note">「常駐義務化」がどこまでかけられるのかは、根拠になる法律によって変わります。条文はどちらもe-Gov法令検索で読めます。</p>
+
+    <div class="sk">
+      <div class="sk-row usual">
+        <div class="sk-label">旅館業法<span class="art">第3条 第6項</span></div>
+        <div class="sk-body">「第一項の許可には、公衆衛生上又は善良の風俗の保持上必要な<b>条件を付することができる</b>。」<br>許可に条件を付けられると書かれています。簡易宿所やホテル・旅館は、自治体が上乗せの条件を課せる余地が広いということです。</div>
+      </div>
+      <div class="sk-row now">
+        <div class="sk-label">住宅宿泊事業法<span class="art">第18条</span></div>
+        <div class="sk-body">「…合理的に必要と認められる限度において、政令で定める基準に従い条例で定めるところにより、区域を定めて、<span class="hl">住宅宿泊事業を実施する期間を制限することができる</span>。」<br>条例に委ねられているのは<b>期間（日数）の制限</b>だと書かれています。常駐義務については、この条文には出てきません。</div>
+      </div>
+    </div>
+
+    <div class="lawq">
+      ここから、<b>180日の民泊（住宅宿泊事業）に対して条例で常駐義務を課せるのか</b>、という疑問が出ています。報道は「簡易宿所を含めた従業員の常駐義務化」と伝えていますが、それが住宅宿泊事業にもかかるとすれば、法律が条例に委ねた範囲を超えるのではないか、という指摘です。素案の全文が公開されていないため、素案が実際にどう書いているかは確認できません。
+    </div>
+
+    <p>なお住宅宿泊事業法には、家主不在型について<b>第11条</b>で「住宅宿泊管理業務を一の住宅宿泊管理業者に委託しなければならない」という定めがあります。ただしこれは管理業者への委託であって、人が現地に常駐することとは別の話です。</p>
+    <p>法律の解釈は、最終的には裁判所が判断することです。ここでは条文に何が書かれているかだけを載せています。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>市の側が挙げている理由</h2>
     <p class="sec-note">京都市の報道発表資料（2026年8月24日・産業観光局観光MICE推進室）から、そのまま引用します。</p>
     <div class="quotes">
@@ -339,6 +367,8 @@ footer b{color:var(--sub);}
     <ul class="srclist">
       <li><a href="https://www.city.kyoto.lg.jp/sankan/cmsfiles/contents/0000357/357294/houdoushiryou.pdf">京都市 報道発表資料「令和8年度 第2回京都市にふさわしい民泊の在り方検討会議の開催」（PDF）</a><br><span class="meta">2026年8月24日・産業観光局観光MICE推進室／会議は8月31日13:00-15:00、京都市役所北庁舎2階 市会大会議室／委員は5名（座長：北村喜宣・上智大学法学部教授、副座長：井上えり子・京都女子大学、岡井有佳・立命館大学、北島隆次・TMI総合法律事務所弁護士、矢ケ崎紀子・東京女子大学）</span></li>
       <li><a href="https://www.city.kyoto.lg.jp/sankan/page/0000357294.html">京都市：令和8年度 第2回 京都市にふさわしい民泊の在り方検討会議の開催</a><br><span class="meta">議題は「地域の実情を踏まえた民泊規制強化策（素案）について」。9月2日時点で当日の会議資料は未掲載</span></li>
+      <li><a href="https://laws.e-gov.go.jp/law/429AC0000000065">住宅宿泊事業法（平成29年法律第65号）— e-Gov法令検索</a><br><span class="meta">第18条：条例で定められるのは「区域を定めて、住宅宿泊事業を実施する期間を制限すること」／第11条：家主不在型は住宅宿泊管理業者への委託義務</span></li>
+      <li><a href="https://laws.e-gov.go.jp/law/323AC0000000138">旅館業法（昭和23年法律第138号）— e-Gov法令検索</a><br><span class="meta">第3条第6項：「第一項の許可には、公衆衛生上又は善良の風俗の保持上必要な条件を付することができる」</span></li>
       <li><a href="https://kumanichi.com/articles/2030964">新規民泊、事実上禁止する素案　京都市が有識者会議に提示（共同通信）</a><br><span class="meta">営業日数上限「0日」、既存は適用外、来年2月の市議会で条例改正案提出を目指す</span></li>
       <li><a href="https://www.kyoto-np.co.jp/articles/-/1782076">京都市で民泊施設の新規営業「事実上禁止」に　住居専用地域と工業地域で、規制強化の素案まとまる（京都新聞）</a><br><span class="meta">簡易宿所を含めた従業員の常駐義務化に言及。本文の大部分は有料</span></li>
       <li>Airbnbホストコミュニティの投稿「京都市の民泊及び宿泊施設規制。民泊、旅館業、新規、既存全て排除の案」<br><span class="meta">2026年8月31日／投稿者は京都市のホストでホストアドバイザリーボードのメンバー／返信8件</span></li>
